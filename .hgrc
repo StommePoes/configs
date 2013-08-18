@@ -1,0 +1,16 @@
+[ui]
+username =  mallory
+verbose = True
+
+[alias]
+slog = log --style=/home/mallory/.hgtemplates/map-cmdline.slog 
+nlog = log --style=/home/mallory/.hgtemplates/map-cmdline.nlog 
+sglog = glog --style=/home/mallory/.hgtemplates/map-cmdline.sglog
+
+#[auth]
+
+[extensions]
+graphlog=
+hgnested=
+
+#http://hgtip.com/tips/advanced/2010-01-15-styling-mercurials-cli/

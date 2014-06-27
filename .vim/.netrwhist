@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/mallory/3MT/website/src/layouts'
+let g:netrw_dirhist_2='/home/mallory/3MT/website/src/documents/members'
+let g:netrw_dirhist_3='/home/mallory/AmsterdamX.pm/css'
+let g:netrw_dirhist_4='/home/mallory/AmsterdamX.pm/new'
+let g:netrw_dirhist_5='/home/mallory/cssoff2013'
+let g:netrw_dirhist_6='/home/mallory/3MT/website/src/documents'
+let g:netrw_dirhist_7='/home/mallory/3MT/website/src/documents/members'
+let g:netrw_dirhist_8='/home/mallory/3MT/website/src/partials'
+let g:netrw_dirhist_9='/home/mallory/3MT/website/src/documents/members'

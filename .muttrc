@@ -1,0 +1,32 @@
+set mbox_type=Maildir
+set folder="~/Maildir"
+set mask="!^\\.[^.]"
+set mbox="~/Maildir"
+set record="+.Sent"
+set postponed="+.Drafts"
+set spoolfile="~/Maildir"
+set realname="_mallory"
+#set from="stommepoes mail"
+set use_from=yes
+mailboxes `echo -n "+ "; find ~/Maildir -maxdepth 1 -type d -name ".*" -printf "+'%f' "`
+macro index,pager c "<change-folder>?<toggle-mailboxes>" "open a different folder"
+macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
+macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
+macro compose A "<attach-message>?<toggle-mailboxes>" "attach message(s) to this message"
+
+#colourz
+color status white blue
+color index green default ~N  #new
+color index red default ~D #deleted
+color header green default "^Subject:"
+color header yellow default "^Date:"
+color header yellow default "^To:"
+color header yellow default "^Cc:"
+color header yellow default "^Bcc:"
+color header yellow default "^From:" 
+
+#abook
+set alias_file= ~/.mutt-alias
+source ~/.mutt-alias
+set query_command= "abook --mutt-query '%s'"
+macro index,pager A "<pipe-message>abook --add-email-quiet<return>" "add the sender address to abook"
